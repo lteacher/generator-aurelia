@@ -20,9 +20,11 @@ var Generator = module.exports = yeoman.generators.Base.extend({
       name    : 'project',
       choices : [
         { name: 'EcmaScript 2016', value: 'skeleton-esnext'},
+        { name: 'EcmaScript 2016 (Webpack)', value: 'skeleton-esnext-webpack'},
         { name: 'ASP.NET 5 - EcmaScript 2016', value: 'skeleton-esnext-aspnetcore'},
         { name: 'TypeScript', value: 'skeleton-typescript'},
-        { name: 'ASP.NET 5 - TypeScript', value: 'skeleton-typescript-aspnetcore'},
+        { name: 'TypeScript (Webpack)', value: 'skeleton-typescript-webpack'},
+        { name: 'ASP.NET 5 - TypeScript', value: 'skeleton-typescript-aspnetcore'}
       ],
       message : 'Which Aurelia preset would you like to install?',
     }, function (answers) {
